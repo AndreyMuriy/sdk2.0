@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace CdekSDK2\Dto;
 
+use CdekSDK2\BaseTypes\Calls;
 use CdekSDK2\BaseTypes\Contact;
 use CdekSDK2\BaseTypes\Location;
 use CdekSDK2\BaseTypes\Money;
@@ -193,6 +194,13 @@ class OrderInfo
      * @var Statuses[]
      */
     public $statuses;
+
+    /**
+     * Информация о прозвонах получателя
+     * @Type("CdekSDK2\BaseTypes\Calls")
+     * @var Calls
+     */
+    public $calls;
 
     /**
      * Информация о вручении
