@@ -36,5 +36,6 @@ class Offices extends Action
         'weight_min' => '',
         'lang' => '',
         'take_only' => '',
+        'is_reception' => ''
     ];
 }
