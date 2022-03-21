@@ -13,6 +13,13 @@ use JMS\Serializer\Annotation\Type;
 class Location extends Base
 {
     /**
+     * Код локации из справочника СДЭК для офисов(дубль поля $code)
+     * @Type("int")
+     * @var int
+     */
+    public $city_code;
+
+    /**
      * Код локации из справочника СДЭК
      * @Type("int")
      * @var int
@@ -115,6 +122,7 @@ class Location extends Base
         $this->rules = [
             'address' => 'required',
             'code' => 'numeric',
+            'city_code' => 'numeric',
             'fias_guid' => 'alpha',
             'postal_code' => 'alpha',
             'longitude' => 'numeric',
