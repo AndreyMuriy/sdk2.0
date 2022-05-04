@@ -174,4 +174,18 @@ class PickupPoint
      * @var Phone[]
      */
     public $phones = [];
+
+    /**
+     * Является пунктом выдачи
+     * @Type("bool")
+     * @var bool
+     */
+    public $is_handout;
+
+    /**
+     * Есть ли в офисе приём заказов
+     * @Type("bool")
+     * @var bool
+     */
+    public $is_reception;
 }
