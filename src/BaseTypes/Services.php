@@ -21,8 +21,8 @@ class Services extends Base
 
     /**
      * Параметр дополнительной услуги
-     * @Type("float")
-     * @var float
+     * @Type("string")
+     * @var string
      */
     public $parameter;
 
