@@ -23,13 +23,6 @@ class City
     public $code;
 
     /**
-     * Почтовый индекс
-     * @Type("array<string>")
-     * @var string[]
-     */
-    public $postal_codes;
-
-    /**
      * Уникальный идентификатор ФИАС населенного пункта
      * @Type("string")
      * @var string
